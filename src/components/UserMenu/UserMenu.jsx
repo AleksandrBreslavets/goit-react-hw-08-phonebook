@@ -20,6 +20,5 @@ export const UserMenu = () => {
             <Greeting>Welcome, {user.name}</Greeting>
             <LogOutBtn onClick={handleLogOut}>Log Out</LogOutBtn>
         </UserContainer>
-        
     );
 };
