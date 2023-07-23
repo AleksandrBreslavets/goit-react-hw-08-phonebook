@@ -22,5 +22,11 @@ export const handleAddContactFulfilled = (state, action) => {
 export const handleDeleteContactFulFilled = (state, action) => {
     state.isLoading = false;
     state.error = null;
-    state.items = state.items.filter(item => item.id !== action.payload.id)
+    state.items = state.items.filter(item => item.id !== action.payload.id);
+};
+
+export const handleLogoutFulfilled = (state) => {
+    state.items = [];
+    state.isLoading = false;
+    state.error = null;
 };

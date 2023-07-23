@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+import { Field, Form } from 'formik';
+
+export const FormWrap = styled(Form)`
+    margin-bottom: 40px;
+`;
 
 export const Label = styled.label`
     display: flex;
@@ -7,12 +12,17 @@ export const Label = styled.label`
     font-weight: 600;
     margin-bottom: 20px;
 `;
-export const Input = styled.input`
+
+export const Input = styled(Field)`
+    font-family: 'Pangolin', cursive;
+    padding-left:15px;
+    font-size:20px;
     width: 300px;
     height: 30px;
     border-radius: 25px;
     border:none;
 `;
+
 export const Button = styled.button`
     padding: 10px 32px;
     border-radius: 10px;
@@ -28,7 +38,4 @@ export const Button = styled.button`
     &:hover,:focus,:active{
         background-color: #3b1d5e;
     }
-`;
-export const Form = styled.form`
-    margin-bottom: 40px;
 `;

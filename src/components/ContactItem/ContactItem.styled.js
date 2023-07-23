@@ -8,9 +8,11 @@ export const Item = styled.li`
         margin-bottom: 15px;
     }
 `;
+
 export const ContactDetails = styled.p`
     font-family: cursive;
 `;
+
 export const Button = styled.button`
     background-color: red;
     color:white;
